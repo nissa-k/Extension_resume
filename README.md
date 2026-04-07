@@ -8,15 +8,12 @@ L’objectif est de faciliter la lecture de contenus longs en générant rapidem
 
 L’utilisateur peut :
 
-coller un texte
+- coller un texte
+- récupérer le texte de la page active
+- choisir la longueur du résumé
+- générer un résumé avec l’IA Gemini
 
-récupérer le texte de la page active
-
-choisir la longueur du résumé
-
-générer un résumé avec l’IA Gemini
-
-Fonctionnalités
+## Fonctionnalités
 Résumé de texte
 
 L’utilisateur peut coller un texte dans l’extension pour obtenir un résumé automatique.
@@ -25,17 +22,15 @@ L’utilisateur peut coller un texte dans l’extension pour obtenir un résumé
 
 L’extension peut récupérer automatiquement le texte de la page web ouverte.
 
-Choix de la longueur
+## Choix de la longueur
 
 Trois types de résumés sont disponibles :
 
-très court
+- très court
+- court
+- plus détaillé
 
-court
-
-plus détaillé
-
-Mode sombre
+## Mode sombre
 
 L’interface propose un mode sombre pour améliorer le confort d’utilisation.
 
@@ -43,7 +38,7 @@ Intelligence artificielle
 
 Les résumés sont générés grâce à l’API Gemini de Google.
 
-Architecture du projet
+## Architecture du projet
 
 Le projet est organisé en deux parties :
 
@@ -63,27 +58,22 @@ app/
  ├── index.html
  └── package.json
 
-Technologies utilisées
+## Technologies utilisées
 
 Le projet repose sur plusieurs technologies modernes :
 
-JavaScript
-
-React
-
-Vite
-
-Chrome Extension Manifest V3
-
-Gemini API (Google AI)
-
-IA Chrome Canary (tentative initiale)
+- JavaScript
+- React
+- Vite
+- Chrome Extension Manifest V3
+- Gemini API (Google AI)
+- IA Chrome Canary (tentative initiale)
 
 Au départ, le projet devait utiliser l’IA locale intégrée dans Chrome Canary, appelée Gemini Nano.
 Cependant, lors des tests l’API n’était pas disponible dans l’environnement utilisé.
 Cela signifie que l’API n’était pas accessible.
 
-Solution utilisée
+## Solution utilisée
 
 Pour garantir le fonctionnement de l’extension, la solution choisie a été d’utiliser l’API Gemini de Google.
 
@@ -97,7 +87,7 @@ l’intelligence artificielle génère un résumé
 
 le résumé est affiché dans l’extension
 
-Installation
+## Installation
 1️. Installer les dépendances
 
 Dans le dossier app :
@@ -123,7 +113,7 @@ Charger l’extension non empaquetée
 
 et sélectionner le dossier du projet.
 
- Utilisation
+## Utilisation
 
 1️. ouvrir l’extension
 2️. coller un texte ou récupérer celui de la page
@@ -133,6 +123,6 @@ et sélectionner le dossier du projet.
 Le résumé généré par l’IA apparaît dans l’extension.
 
 
-Auteurs
+## Auteurs
 Safaa Zemmar
 Nissa karadag
